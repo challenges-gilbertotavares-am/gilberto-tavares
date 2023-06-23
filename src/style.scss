@@ -1,0 +1,61 @@
+.wp-block-gilberto-tavares-json-table {
+
+	table {
+		--border-width: 1px;
+		--table-color-type: initial;
+		--table-bg-type: initial;
+		--table-color-state: initial;
+		--table-bg-state: initial;
+		--table-color: #212529;
+		--table-bg: #fff;
+		--table-border-color: #dee2e6;
+		--table-accent-bg: transparent;
+		--table-striped-color: #212529;
+		--table-striped-bg: rgba(0, 0, 0, .05);
+		--table-active-color: #212529;
+		--table-active-bg: rgba(0, 0, 0, .1);
+		--table-hover-color: #212529;
+		--table-hover-bg: rgba(0, 0, 0, .075);
+		width: 100%;
+		margin-bottom: 1rem;
+		vertical-align: top;
+		caption-side: top;
+		border-collapse: collapse;
+		border-color: var(--table-border-color);
+
+		tbody,
+		td,
+		tfoot,
+		th,
+		thead,
+		tr {
+			border-color: inherit;
+			border-style: solid;
+			border-width: 0;
+		}
+
+		caption {
+			margin-top: 0;
+			margin-bottom: .5rem;
+			font-weight: 700;
+			line-height: 1.2;
+		}
+
+		> thead {
+			vertical-align: bottom;
+		}
+
+		>:not(caption) > * > * {
+			padding: .5rem;
+			color: var(--table-color-state, var(--table-color-type, var(--table-color)));
+			background-color: var(--table-bg);
+			border-bottom-width: var(--border-width);
+			box-shadow: inset 0 0 0 9999px var(--table-bg-state, var(--table-bg-type, var(--table-accent-bg)));
+		}
+
+		>tbody > tr:nth-of-type(odd) > * {
+			--table-color-type: var(--table-striped-color);
+			--table-bg-type: var(--table-striped-bg);
+		}
+	}
+}

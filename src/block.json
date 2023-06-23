@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "gilberto-tavares/json-table",
+	"version": "1.0.0",
+	"title": "Gilberto Tavares",
+	"category": "common",
+	"description": "Formats the JSON response from the custom AJAX endpoint into a table.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"hiddenColumns": {
+			"type": "array",
+			"default": []
+		}
+	},
+	"example": {
+		"attributes": {
+			"hiddenColumns": ["id", "lname", "date"]
+		}
+	},
+	"textdomain": "gilberto-tavares",
+	"editorScript": "file:index.js",
+	"style": "file:style-index.css",
+	"viewScript": "file:view.js"
+}
